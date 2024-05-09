@@ -11,10 +11,15 @@
                 <span class="prezzo">{{ $product['price'] }} &euro;</span>
                 <div class="badges">
                     <span class="cuore d-flex ">&hearts;</span>
-                    <span v-for="(i, indice) in productData.badges" :key="indice" v-show="i.type === 'discount'"
-                        class="discount d-flex">{{ $product['price'] }}</span>
-                    <span v-for="(i, indice) in productData.badges" :key="indice" v-show="i.type === 'tag'"
-                        class="eco d-flex">{{ $product['price'] }}</span>
+                    @foreach ($product['badges'] as $badge)
+                        @if ($badge['type'] === 'discount')
+                            <span class="discount d-flex">{{ $badge ['value'] }}</span>
+                        @endif
+                        @if ($badge['type'] === 'tag')
+                            <span class="eco d-flex">{{ $badge ['value'] }}</span>
+                        @endif
+
+                    @endforeach
 
                 </div>
             </div>
