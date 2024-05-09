@@ -1,12 +1,30 @@
+@php
+    $menus = [
+        [
+            'title' => 'Home'
+        ],
+        [
+            'title' => 'About'
+        ],
+        [
+            'title' => 'Info'
+        ]
+    ];
+@endphp
+
+
 <header>
     <div class="topbar">
       <div class="container d-flex box">
         <!-- nav -->
         <nav class="menu d-flex">
           <ul class="d-flex">
-            <li v-for="(item, index) in menu" :key="index">
-              {{-- <a href="#">{{item.title}}</a> --}}
-            </li>
+            @foreach ($menus as $menu)
+                <li>
+                    <a href="#">{{$menu['title']}}</a>
+                </li>
+            @endforeach
+
           </ul>
         </nav>
         <!-- /nav -->

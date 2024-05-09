@@ -10,7 +10,7 @@
                 <h3>{{ $product['name'] }}</h3>
                 <span class="prezzo">{{ $product['price'] }} &euro;</span>
                 <div class="badges">
-                    <span class="cuore d-flex ">&hearts;</span>
+                    <span class="cuore d-flex {{ $product['isInFavorites'] ? 'red' : '' }}">&hearts;</span>
                     @foreach ($product['badges'] as $badge)
                         @if ($badge['type'] === 'discount')
                             <span class="discount d-flex">{{ $badge ['value'] }}</span>
