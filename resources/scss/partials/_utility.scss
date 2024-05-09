@@ -1,0 +1,30 @@
+@use "./variables" as *;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1450px;
+  width: 99%;
+  flex-wrap: wrap;
+}
+
+
+
+.d-flex{
+  display: flex;
+}
+
+.line-through{
+  text-decoration: line-through;
+  
+}
+
+.prezzo{
+  color: $color-prezzo;
+  font-weight: 800;
+}
