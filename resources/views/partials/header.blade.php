@@ -1,16 +1,20 @@
 @php
     $menus = [
         [
-            'title' => 'Home'
+            'title' => 'Home',
+            'route' => 'home'
         ],
         [
-            'title' => 'About'
+            'title' => 'About',
+            'route' => 'about'
         ],
         [
-            'title' => 'Info'
+            'title' => 'Info',
+            'route' => 'info'
         ]
     ];
-@endphp
+
+    @endphp
 
 
 <header>
@@ -21,7 +25,7 @@
           <ul class="d-flex">
             @foreach ($menus as $menu)
                 <li>
-                    <a href="#">{{$menu['title']}}</a>
+                    <a class="{{ Route::currentRouteName() === $menu['route'] ? 'active' : '' }}" href="{{ route($menu['route']) }}">{{$menu['title']}}</a>
                 </li>
             @endforeach
 

@@ -19,3 +19,13 @@ Route::get('/', function () {
 
     return view('home', compact('products'));
 })->name('home');
+
+Route::get('/chi-siamo', function () {
+
+    return view('about');
+})->name('about');
+
+Route::get('/info', function () {
+
+    return view('info');
+})->name('info');

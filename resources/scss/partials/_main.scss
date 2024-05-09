@@ -1,95 +1,104 @@
+main {
+    padding-top: 60px;
+}
 
-.container{
+.container {
     flex-wrap: wrap;
-    .product{
-      position: relative;
-      display: inline-block;
-      margin: 40px auto;
-      img{
-       cursor: pointer;
-       width: 465px;
-       height: 670px;
-      }
 
-      .red{
-        color: $color-prezzo;
-      }
-      .cuore{
-        position: absolute;
-        top: 0;
-        right: 0;
-        align-items: center;
-        justify-content: center;
-        background-color: $color-white;
-        height: 50px;
-        width: 50px;
-        margin-top: 10px;
-        font-size: 2rem;
-      }
+    .product {
+        position: relative;
+        display: inline-block;
+        margin: 40px auto;
 
-      .discount{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: $color-white;
-        width: 55px;
-        height: 25px;
-        margin-bottom: 100px;
-        background-color: $color-prezzo;
-        color: $color-white;
-      }
-      .eco{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: $color-white;
-        width: 100px;
-        height: 25px;
-        margin-bottom: 100px;
-        margin-left: 60px;
-        background-color: green;
-        color: $color-white;
-      }
-      .eco-last{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: $color-white;
-        width: 100px;
-        height: 25px;
-        margin-bottom: 100px;
-        background-color: green;
-        color: $color-white;
-      }
-      .prezzo{
-        color: $color-prezzo;
-        font-weight: 800;
-      }
+        img {
+            cursor: pointer;
+            width: 465px;
+            height: 670px;
+        }
+
+        .red {
+            color: $color-prezzo;
+        }
+
+        .cuore {
+            position: absolute;
+            top: 0;
+            right: 0;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-white;
+            height: 50px;
+            width: 50px;
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        .discount {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $color-white;
+            width: 55px;
+            height: 25px;
+            margin-bottom: 100px;
+            background-color: $color-prezzo;
+            color: $color-white;
+        }
+
+        .eco {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $color-white;
+            width: 100px;
+            height: 25px;
+            margin-bottom: 100px;
+            margin-left: 60px;
+            background-color: green;
+            color: $color-white;
+        }
+
+        .eco-last {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $color-white;
+            width: 100px;
+            height: 25px;
+            margin-bottom: 100px;
+            background-color: green;
+            color: $color-white;
+        }
+
+        .prezzo {
+            color: $color-prezzo;
+            font-weight: 800;
+        }
 
 
-      .foto1{
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+        .foto1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
-  }
+}
 
-  .product:hover .foto1{
+.product:hover .foto1 {
     display: none;
-  }
+}
 
 
 
-  .line-through{
+.line-through {
     text-decoration: line-through;
-  }
+}
