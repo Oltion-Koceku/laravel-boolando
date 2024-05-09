@@ -15,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $product = config('db.json.product');
+    $products = config('db');
 
-
-    return view('home');
+    return view('home', compact('products'));
 })->name('home');

@@ -106,3 +106,13 @@ $json = '{
       }
     ]
   }';
+// con json_decode ho trasformnato la variabile json in un array php
+$data = json_decode($json, true);
+
+// poi hgo preso products di data e l'ho inserito in products variabile php
+
+$products = $data['products'];
+
+// e in fine ho restituito la variabile products
+
+return $products;
