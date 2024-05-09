@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    $product = config('db.json.product');
+
+
     return view('home');
-});
+})->name('home');

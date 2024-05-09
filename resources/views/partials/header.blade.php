@@ -5,7 +5,7 @@
         <nav class="menu d-flex">
           <ul class="d-flex">
             <li v-for="(item, index) in menu" :key="index">
-              <a href="#">{{item.title}}</a>
+              {{-- <a href="#">{{item.title}}</a> --}}
             </li>
           </ul>
         </nav>
@@ -13,7 +13,7 @@
 
         <!-- logo -->
         <div class="logo">
-          <img src="../assets/img/boolean-logo.png" alt="logo">
+          <img src="{{ asset('/img/boolean-logo.png') }}" alt="logo">
         </div>
         <!-- /logo -->
 
